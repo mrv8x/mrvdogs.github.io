@@ -1,0 +1,87 @@
+<html>
+    
+<!-- Mirrored from www.omfgdogs.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Jun 2021 02:45:38 GMT -->
+<head>
+        <title>OMFGDOGS</title>
+        <link rel="stylesheet" type="text/css" href="omfgdogs.css" />
+        <link href="js/toastr/toastr.css" rel="stylesheet"/>
+        <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/toastr/toastr.js"></script>
+    </head>
+
+    <body>
+        <div id="overlay" class="container" onclick="off()">
+            <a href='#'class='playBut'>
+                <svg version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                    x="0px" y="0px" width="213.7px" height="213.7px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7"
+                    xml:space="preserve">
+
+                    <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                        73.5,62.5 148.5,105.8 73.5,149.1 "/>
+
+                    <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
+                </svg>
+            </a>
+        </div>
+
+        <audio id="omfgaudio" loop>
+            <source src="omfgdogs.mp3" type="audio/mpeg">
+        </audio>
+
+        <script type="text/javascript">
+            function off() {
+                document.getElementById("overlay").style.display = "none";
+                var audio = document.getElementById("omfgaudio");
+                audio.play();
+            }
+        </script>
+
+        <script type="text/javascript">
+            toastr.options = {
+              "closeButton": true,
+              "debug": false,
+              "positionClass": "toast-bottom-right",
+              "showDuration": "1000",
+              "hideDuration": "1000",
+              "timeOut": "100000",
+              "extendedTimeOut": "100000",
+              "showEasing": "swing",
+              "hideEasing": "linear",
+              "showMethod": "fadeIn",
+              "hideMethod": "fadeOut"
+           }
+        </script>
+
+        <div id="footer">
+            <div id="footer-left">
+                [ <a href="http://escism.net/" target="_blank">escism.net</a> ] [ <a href="https://twitter.com/eataudio" target="_blank">@eataudio</a> ]
+            </div>
+            <div id="footer-right" >
+                <div id="helptext">
+                    [ help keep the dogs running! ]
+                </div>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="J2EHN6Y6XPR6J" />
+                    <input type="image" src="pp.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="../www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+
+                <div id="btc">
+                    <a href="#"><img src="btc.svg" width="25px"/></a>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $('#btc').click(function() {
+                toastr.info('Donate Bitcoin!<br /><a href="bitcoin:15TQbWc733HCT3WUcv2w7s4LREeVeqMamz">15TQbWc733HCT3WUcv2w7s4LREeVeqMamz</a>')
+            });
+            toastr.options.onHidden = function() { }
+        </script>
+        <script src="js/wat.js"></script>
+    </body>
+
+<!-- Mirrored from www.omfgdogs.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Jun 2021 02:45:42 GMT -->
+</html>
